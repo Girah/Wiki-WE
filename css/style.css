@@ -48,7 +48,7 @@
 
   @font-face {
     font-family: "Cormorant Garamond";
-    src: url("/fonts/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
+    src: url("https://github.com/Girah/Wiki-WE/blob/main/fonts/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
