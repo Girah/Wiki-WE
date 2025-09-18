@@ -14,19 +14,4 @@ document.addEventListener("DOMContentLoaded", () => {
             closeIcon.style.display = "none";
         }
     });
-
-    (function() {
-      const timestamp = Date.now();
-
-      // Cibler tous les <link rel="stylesheet"> et <script src="">
-      document.querySelectorAll('link[rel="stylesheet"], script[src]').forEach(el => {
-        const attr = el.tagName === "LINK" ? "href" : "src";
-        const url = new URL(el.getAttribute(attr), window.location.href);
-
-        // Ajouter le timestamp comme paramètre (cache-buster)
-        url.searchParams.set("v", timestamp);
-
-        el.setAttribute(attr, url.toString());
-      });
-    })();
 });

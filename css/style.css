@@ -90,14 +90,13 @@ header, footer {
 header {
   top: 0;
   height: 60px; 
-  font-size: 1.4rem;
-  padding: 0 20px;
+  font-size: 1.3rem;
+  padding: 0px 10px;
   border-bottom: 2px solid #a26f28;
 }
 
 header img {
-  height: 60px;
-  margin-right: 10px;
+  height: 50px;
 }
 
 footer {
@@ -111,7 +110,7 @@ footer {
 .hamburger {
   position: fixed;
   top: 15px;
-  right: 20px;
+  right: 10px;
   z-index: 1100;
   background: none;
   border: none;
@@ -205,9 +204,8 @@ footer {
 .contenu-main {
   flex: 1;
   overflow-y: auto;
-  margin: 60px 20px 60px 20px;
+  margin: 80px 0px 60px 0px;
   color: white;
-  white-space: pre-line;
   display: flex;
   flex-direction: column;
   max-width: 600px;
@@ -216,9 +214,9 @@ footer {
 
 .image-container, .img-principale {
   position: relative;
-  width: 120%;
-  left: -10%;
+  width: 100%;
 }
+
 
 .image-container img {
   width: 100%;
@@ -243,26 +241,91 @@ footer {
   mask-size: 100% 100%;
 }
 
-.warning {
-  border: 3px solid rgb(255, 255, 255);
-  background-color: rgb(148, 58, 58);
+.txt-main {
+  width: 90%;
+  margin: auto;
+  white-space: pre-line;
+  font-size: 1.1rem;
+}
+
+.imp {
+  color : #a26f28;
+  font-weight: 700;
+}
+
+.txt-titre {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  color: #a26f28;
+}
+
+.txt-ST {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #a26f28;
+}
+
+.txt-ST span {
+  font-size: 1.7rem;
+  color:#a26f28;
+}
+
+.txt-main ul {
   display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0 5%;
+  padding: 0;
+}
+
+.txt-main ul li::marker {
+  color : #a26f28;
+}
+
+.warning {
+  border: 3px solid red;
+  background-color: #665237;
+  display: flex;
+  align-items: center;
   border-radius: 20px;
   padding: 10px;
+  margin: 10px auto ;
   gap: 10px;
-  align-items: center;
-  color:#fff3f3;
-  width: 100%;
+  width: 90%;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .warning i {
   font-size: 40px;
-  margin: 0px 5px;
+  margin: 0 5px;
+  color: red;
+  flex-shrink: 0;
 }
+
+.warning-text {
+  flex: 1;               
+  line-height: 1.4;   
+  white-space: pre-line;  
+}
+
+.warning-text .number {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 30px;
+  position: relative;         
+}
+
 
 /*RESPONSIVE*/
 /* Tablette (à partir de 768px) */
 @media screen and (min-width: 768px) {
+  header {
+    font-size: 2rem;
+  }
   main {
     display: flex;
     flex-direction: row;
