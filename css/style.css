@@ -155,20 +155,21 @@ footer {
   font-weight: bold; 
 } 
 
-.Nav a:hover { 
+.Nav a:hover, .Nav .actuel { 
   background: #20324e; 
   color: #a26f28;
-
 } 
+
+
 .Nav a i { 
   padding: 0px 20px 0px 10px; 
+  color: #a26f28;
 } 
 
 .Nav hr { 
   border: none; 
   border-top: 2px solid #a26f28; 
 }
-
 
 
 .Nav::-webkit-scrollbar,
