@@ -213,15 +213,6 @@ footer {
   scrollbar-color: #bdbdbd transparent; /* gris clair */
 }
 
-/* === CONTENU PRINCIPAL === */
-.contenu-main {
-  flex: 1;
-  overflow-y: auto;  
-  padding: 20px;
-  color: white;
-  white-space: pre-line;
-}
-
 /* === LORE === */
 .image-container, .img-principale {
   position: relative;
@@ -281,13 +272,7 @@ footer {
   .image-container, .img-principale {
   width: 100%;
   left: 0%;
-  max-width: 600px;
   }
 
-}
-
-/* Bureau (à partir de 1024px) */
-@media screen and (min-width: 1024px) {
-    
 }
 
